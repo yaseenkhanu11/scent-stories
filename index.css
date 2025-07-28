@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    max-width: 100%;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 }
 
 .whitebackground {
-    max-width: none;
+   
 }
 
 /* Top bar */
@@ -46,7 +47,6 @@ hr {
     padding: 15px 40px;
     background-color: #0e0e0e;
     color: white;
-    position: sticky;
    
 }
 
@@ -181,7 +181,7 @@ hr {
 .areapic1 {
     width: 400px;
     padding: 40px;
-    background-color: #f9f9f9;
+   
     border-radius: 12px;
     text-align: left;
     font-family: 'Arial', sans-serif;
@@ -208,7 +208,7 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
      transition: opacity 0.5s ease; 
     border-radius: 8px;
@@ -228,8 +228,8 @@ hr {
 
 /* Product Title */
 .perfume1 {
-     font-weight: 200; 
-    font-size: 16px;
+     font-weight: bold; 
+    font-size: 15.5px;
     margin-top: 7px;
     text-align: left;
 
@@ -244,7 +244,7 @@ hr {
     color: #888;
     margin-top: 7px;
    text-align: left ;
-   line-height: 1.5em;
+
 }
 
 /* Stars and reviews */
@@ -258,7 +258,7 @@ hr {
 }
 
 .one {
-    font-size: 16px;
+    font-size: 13px;
     color: #555;
     margin-left: 6px;
 }
@@ -268,7 +268,6 @@ hr {
     font-size: 20px;
     font-weight: bold;
     color: #d32f2f;
-    margin-top: 6px;
     text-align: left ;
 }
 
@@ -276,7 +275,7 @@ hr {
     
     width: 400px;
     padding: 40px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     border-radius: 12px;
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -303,7 +302,7 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
      transition: opacity 0.5s ease; 
     border-radius: 8px;
@@ -323,8 +322,8 @@ hr {
 
 /* Product Title */
 .perfume2 {
-     font-weight: 200; 
-    font-size: 16px;
+     font-weight: bold; 
+    font-size: 15.5px;
     margin-top: 10px;
     text-align: left;
     display: flex;
@@ -338,12 +337,11 @@ hr {
 
 /* Subtext */
 .text2 {
-    font-size: 17px;
+    font-size: 16px;
     color: #888;
     margin-top: 4px;
    text-align: left ;
    margin-top: 7px;
-   line-height: 1.5em;
 }
 
 /* Stars and reviews */
@@ -357,7 +355,7 @@ hr {
 }
 
 .two {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
     margin-left: 6px;
 }
@@ -367,7 +365,6 @@ hr {
     font-size: 20px;
     font-weight: bold;
     color: #d32f2f;
-    margin-top: 6px;
     text-align: left ;
 }
 
@@ -404,10 +401,10 @@ hr {
 /* Titles (product name) */
 .perfume3, .perfume4, .perfume5 {
   font-size: 15.5px;
-  font-weight: 300px;
-  color: #222;
+   font-weight: bold;
+  color: #333;
   text-align: left;
-  margin-top: 20px;
+  
 }
 
 /* Subtitles */
@@ -417,7 +414,7 @@ hr {
     margin-top: 4px;
    text-align: left ;
    margin-top: 10px;
-   line-height: 1.5em;
+  
 }
 
 /* Rating stars */
@@ -432,7 +429,7 @@ hr {
 /* Rating count */
 .three, .four, .five {
   color: #555;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 6px;
 }
 
@@ -462,7 +459,8 @@ hr {
   color: white;
   font-family: 'Arial', sans-serif;
    width: 95%; 
-  margin: 40px 20px;
+  margin-left: 27px;
+   margin: 60px auto;
   
 }
 
@@ -481,12 +479,1469 @@ hr {
 
 }
 
+.executiverange{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+
+}
+
+.executive{
+   margin-left: 27px;
+}
+
+.view2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 35px;
+    text-decoration: underline;
+    cursor: pointer;
+    
+
+}
+
+
+
+/* Parent Grid Layout */
+.parent2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ background-color: #f8f8f8;
+  padding: 30px 10px; 
+  margin-left: 20px;
+}
+
+/* Common Card Styles */
+.parent2 section {
+  width: 220px;
+  /* background: #fff; */
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* === Image Container === */
+.parent2 section div:first-child {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  
+}
+
+.parent2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Default: show first image, hide second */
+.catch2, .merry2, .smash2, .florse2 {
+  opacity: 0;
+
+}
+
+/* Hover: show second image */
+.areapic6:hover .catch2,
+.areapic7:hover .merry2,
+.areapic9:hover .smash2,
+.areapic10:hover .florse2 {
+  opacity: 1;
+}
+
+.areapic6:hover .catch1,
+.areapic7:hover .merry1,
+.areapic9:hover .smash1,
+.areapic10:hover .florse1 {
+  opacity: 0;
+}
+
+/* === Product Title === */
+[class^="perfume"] {
+   font-weight: bold;
+  color: #333;
+  font-size: 15.5px;
+  text-align: left;
+}
+
+/* === Product Subtitle === */
+[class^="text"] {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* === Star Ratings === */
+[class^="review"] {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.checked {
+  color: #ffb400;
+  font-size: 14px;
+  margin: 0 1px;
+}
+
+[class^="review"] span:last-child {
+  font-size: 15px;
+  color: #444;
+  margin-left: 5px;
+}
+
+
+[class^="price"] {
+  color: #c00;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.price10 .from{
+    font-size: 14px;
+    
+   
+}
+
+.price10 .rate{
+    font-size: 14px;
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+
+
+.testers2 {
+  position: relative !important;
+  opacity: 1 !important;
+  z-index: 2;
+}
+
+/* === CRAFTSMANSHIP Banner Section === */
+.thirdbanner {
+  background-color: #a5a39e; /* subtle marble background color */
+  border-radius: 20px;
+  padding: 25px 40px;
+  width: 93%;
+  margin: 40px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.craftmanship {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  color: white;
+
+}
+
+.craftmanship span {
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+.poeticrange {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin-top: 60px;
+   margin-bottom: 30px;
+   margin-left: 43px;
+   margin-right: 30px;
+}
+
+.poetic {
+  font-weight: bold;
+  color: #333;
+ 
+}
+
+.view3 {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Parent Grid Layout */
+.parent3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ background-color: #f8f8f8;
+  padding: 30px 10px; 
+  margin-left: 20px;
+}
+
+/* Common Card Styles */
+.parent3 section {
+  width: 220px;
+  /* background: #fff; */
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* === Image Container === */
+.parent3 section div:first-child {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  
+}
+
+.parent3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Default: show first image, hide second */
+.catchgold2, .iqbal2, .box2, .pouch2 {
+  opacity: 0;
+
+}
+
+/* Hover: show second image */
+.areapic11:hover .catchgold2,
+.areapic12:hover .iqbal2,
+.areapic14:hover .box2,
+.areapic15:hover .pouch2 {
+  opacity: 1;
+}
+
+.areapic11:hover .catchgold1,
+.areapic12:hover .iqbal1,
+.areapic14:hover .box1,
+.areapic15:hover .pouch1 {
+  opacity: 0;
+}
+
+/* === Product Title === */
+[class^="perfume"] {
+   font-weight: bold;
+  color: #333;
+  font-size: 15.5px;
+  margin: 15px 0 5px;
+  text-align: left;
+}
+
+/* === Product Subtitle === */
+[class^="text"] {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* === Star Ratings === */
+[class^="review"] {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.checked {
+  color: #ffb400;
+  font-size: 14px;
+  margin: 0 1px;
+}
+
+[class^="review"] span:last-child {
+  font-size: 15px;
+  color: #444;
+  margin-left: 5px;
+}
+
+
+[class^="price"] {
+  color: #c00;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.from{
+    font-size: 15px;
+}
+
+.price14 span{
+ font-size: 14px;
+ text-decoration: line-through;
+ margin-left: 5px;
+}
+
+.testers3 {
+  position: relative !important;
+  opacity: 1 !important;
+  z-index: 2;
+}
+
+.banner4 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 60px;
+  width: 95%;
+  margin-left: 30px;
+}
+
+.deals4 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.deals4 img {
+  width: 280px;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.deals4 img:hover {
+  transform: translateY(-10px);
+
+}
+
+.dealspara4 {
+  display: flex;
+  justify-content: centre;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+
+.summerpara{
+    margin-left: 8%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.officepara{
+    margin-left: 21%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.westernpara{
+    margin-left: 21%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.giftingpara{
+    margin-left: 19%;
+     font-size: 18px;
+  font-weight: bold;
+  color: #000;
+
+}
+
+.fourthbanner {
+  background-color: #a5a39e; /* subtle marble background color */
+  border-radius: 20px;
+  padding: 25px 40px;
+  width: 93%;
+  margin: 40px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.bottlesbox {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  color: white;
+
+}
+
+.bottlesbox  span {
+  font-weight: bold;
+  font-size: 21px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+.summerdeals{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin-top: 60px;
+   margin-bottom: 30px;
+   margin-left: 43px;
+   margin-right: 30px;
+}
+
+.summer {
+  font-weight: bold;
+  color: #333;
+ 
+}
+
+.view4 {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* === Main Container for Product Cards === */
+.parent4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 30px 10px;
+  margin-left: 20px;
+}
+
+/* === Each Card Layout === */
+.parent4 section {
+  width: 220px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* === Image Container === */
+.parent4 section div:first-child {
+  position: relative;
+  width: 100%;
+  height: 270px;
+}
+
+.parent4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* === Second Image Hidden by Default === */
+.catchgold4, .florse4, .rabt2, .layer2, .near2 {
+  opacity: 0;
+}
+
+/* === Hover to Reveal Second Image === */
+.areapic16:hover .catchgold4,
+.areapic17:hover .florse4,
+.areapic18:hover .rabt2,
+.areapic19:hover .layer2,
+.areapic20:hover .near2 {
+  opacity: 1;
+}
+
+.areapic16:hover .catchgold3,
+.areapic17:hover .florse3,
+.areapic18:hover .rabt1,
+.areapic19:hover .layer1,
+.areapic20:hover .near1 {
+  opacity: 0;
+}
+
+/* === Product Title === */
+[class^="perfume"] {
+   font-weight: bold;
+  color: #333;
+  font-size: 15.5px;
+  margin: 15px 0 5px;
+  text-align: left;
+}
+
+/* === Product Subtitle === */
+[class^="text"] {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* === Star Ratings === */
+[class^="review"] {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.checked {
+  color: #ffb400;
+  font-size: 14px;
+  margin: 0 1px;
+}
+
+[class^="review"] span:last-child {
+  font-size: 15px;
+  color: #444;
+  margin-left: 5px;
+}
+
+/* === Price Styling === */
+[class^="price"] {
+  color: #c00;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.from {
+  font-size: 15px;
+  color: #555;
+  margin-right: 5px;
+  color: #c00;
+}
+
+
+.price19 span,
+.price20 span {
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+
+/* Parent container for all items */
+.rowpics {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 50px;
+  flex-wrap: wrap; 
+  cursor: pointer;
+  
+}
+
+/* Style for all child boxes */
+.rowpics > div {
+  width: 220px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.rowpics > div:hover {
+  transform: translateY(-5px);
+}
+
+/* Product images */
+.rowpics img {
+  width: 100%;
+  height: 340px;
+  border-radius: 8px;
+}
+
+/* Product name styling */
+.rowpics p[class^="name"] {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 300px;
+  color: #333;
+}
+
+/* Product price styling */
+.rowpics p[class^="rate"] {
+  margin-top: 5px;
+  font-size: 17px;
+  color: #888;
+  font-weight: 300px;
+}
+
+.shaikh1{
+    width: 100%;
+
+}
+
+.oud{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin-top: 60px;
+   margin-bottom: 30px;
+   margin-left: 43px;
+   margin-right: 30px;
+}
+
+.oud1 {
+  font-weight: bold;
+  color:#000;
+ 
+}
+
+.view5 {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.parent5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ background-color: #f8f8f8;
+  padding: 30px 10px; 
+  margin-left: 20px;
+}
+
+/* Common Card Styles */
+.parent5 section {
+  width: 220px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* === Image Container === */
+.parent5 section div:first-child {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  
+}
+
+.parent5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Default: show first image, hide second */
+.inferno2, .amber2, .addiction2, .zargiya2 {
+  opacity: 0;
+
+}
+
+/* Hover: show second image */
+.areapic21:hover .inferno2,
+.areapic22:hover .amber2,
+.areapic24:hover .addiction2,
+.areapic25:hover .zargiya2 {
+  opacity: 1;
+}
+
+.areapic21:hover .inferno1,
+.areapic22:hover .amber1,
+.areapic24:hover .addiction1,
+.areapic25:hover .zargiya1 {
+  opacity: 0;
+}
+
+/* === Product Title === */
+[class^="perfume"] {
+  font-weight: bold;
+  color: #333;
+  font-size: 15.5px;
+  margin: 15px 0 5px;
+  text-align: left;
+}
+
+/* === Product Subtitle === */
+[class^="text"] {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* === Star Ratings === */
+[class^="review"] {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.checked {
+  color: #ffb400;
+  font-size: 14px;
+  margin: 0 1px;
+}
+
+[class^="review"] span:last-child {
+  font-size: 15px;
+  color: #444;
+  margin-left: 5px;
+}
+
+
+[class^="price"] {
+  color: #c00;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
 
 
 
 
+.rectanglebanners1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 15px;
+  padding-top: 7%;
+}
 
 
+ .rectangle12,
+ .rectangle34 {
+  display: flex;
+  gap: 15px; 
+  justify-content: center;
+  
+}
+
+ .rectanglebanners1 img {
+  width: 45%; 
+  height: auto;
+  border-radius: 10px;
+   cursor: pointer;
+} 
+
+.ahleoud{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin-top: 60px;
+   margin-bottom: 20px;
+   margin-left: 43px;
+   margin-right: 30px;
+}
+
+.ahle {
+  font-weight: bold;
+  color:#000;
+ 
+}
+
+.view6 {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Global Reset and Base */
+
+
+/* Parent container */
+.parent6 {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 40px;
+  cursor: pointer;
+   /* background-color: #f8f8f8; */
+   margin-bottom: 7%;
+}
+
+/* Common style for all product cards */
+.parent6 section {
+  /* background-color: #f8f8f8; */
+  width: 230px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+ 
+  transition: transform 0.3s ease;
+}
+
+.parent6 section:hover {
+  transform: translateY(-5px);
+}
+.areapic27{
+     background-color: #f8f8f8;   /* mng ba d la colr wrkao alo ba da shata agha clr razi laka testers 2 ogra ahle oud k*/
+}
+
+/* Roll-on image styling */
+.parent6 img[class^="rollon"] {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+ 
+ 
+}
+
+
+/* Perfume name */
+.parent6 p[class^="perfume"] {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+/* Description text */
+.parent6 p[class^="text"] {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* Rating section */
+.parent6 .fa-star {
+  color: #ffc107;
+  font-size: 14px;
+}
+
+
+/* Price styling */
+.parent6 p[class^="price"] {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e53935;
+  margin-top: 8px;
+}
+
+.celebrity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrap on smaller screens */
+  gap: 19px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.celebrity img {
+  width: 170px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.celebrity img:hover {
+  transform: scale(1.05);
+}
+
+.quizbanner {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+/* Left side: Image */
+.actor img {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right side: Black box with text */
+.right-content {
+  background-color: black;
+  color: white;
+  padding: 60px 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-content h3 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+/* Buttons below */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.buttons button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding:17px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: 50px;
+  transition: background-color 0.3s;
+  
+}
+
+.buttons button:hover {
+  background-color:red;
+}
+
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px 40px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+/* Common box styles */
+.logos .cup,
+.logos .right,
+.logos .like {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Icon styling */
+.cup1,
+.right1,
+.like1 {
+  width: 70px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Headings */
+.boldwrite {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Paragraph text */
+.simplewrite {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+ .outlet-container {
+  display: flex;
+  margin-top: 50px;
+}
+
+
+
+/* Right Side (Text with Background) */
+.outlet-text-side {
+  flex: 1; 
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.text-content h2 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.text-content button {
+  padding: 18px 35px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.text-content button:hover {
+  background-color:red;
+}
+
+
+
+.hundredhead {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hundred {
+  font-size: 28px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 30px;
+  font-style: normal;
+}
+
+.hundredpara1,
+.hundredpara2,
+.hundredpara3 {
+  font-size: 16px;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.hundredpara1 strong,
+.hundredpara2 strong,
+.hundredpara3 strong {
+  font-weight: 800px;
+  color: #000;
+}
+
+.hundredhead {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.secondhead{
+  max-width: 1200px;
+  margin:  auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.longlasting {
+  font-size: 28px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.lastingpara1,
+.lastingpara2,
+.lastingpara3,
+.lastingpara4,
+.lastingpara5{
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.lastingpara1 span,
+.lastingpara3 span,
+.lastingpara4 span,
+.lastingpara5 span {
+    text-decoration: underline;
+ 
+}
+
+.lastingpara2{
+    text-align: center;
+}
+
+.lastingpara3{
+    margin-left: 5%;
+}
+
+.lastingpara4{
+    margin-left: 11%;
+}
+.lastingpara5{
+    margin-left: 17%;
+}
+
+.thirdhead{
+  max-width: 1110px;
+  margin:  auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 7%;
+}
+
+.lastoud {
+  font-size: 28px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.lastoudpara1,
+.lastoudpara2,
+.lastoudpara3,
+.lastoudpara4{
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.thirdhead span{
+    text-decoration: underline;
+}
+
+
+
+
+/* Container */
+.wholethreesquare {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.squarecard1,
+.squarecard2,
+.squarecard3 {
+  width: 380px;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.squarecard2{
+    background-color: #888;
+}
+.squarecard1,
+.squarecard3{
+    background-color: #f8f8f8;
+}
+.card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50% 50% 0 0;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.card-title {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-style: normal;
+
+}
+
+.card-title2 {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+/* Paragraph */
+.card-desc1,
+.card-desc3{
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.card-desc2{
+    color: white;
+    font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 15px;
+}
+
+/* Button */
+.card-btn1,
+.card-btn3 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn2 {
+  background-color: white;
+  color: grey;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn1:hover,
+ .card-btn3:hover{
+  background-color: white;
+  color: #000;
+}
+
+
+.card-btn2:hover{
+  color: #000;
+}
+
+.emailoffers{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.emailofferpara{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 15%;
+    
+}
+
+.email1{
+    padding: 13px;
+    margin-left: 20px;
+    width: 17%;
+  }
+
+  ::placeholder{
+    font-size: 15px;
+    color: #000;
+  }
+
+  .subscribe{
+     width: 13%;
+     text-align: center;
+     padding: 12px;
+     border-bottom-right-radius: 25px;
+     border-top-right-radius: 25px;
+     font-size: 18px;
+     background-color: #c00;
+     color: white;
+     font-weight: bold;
+     border: none;
+     cursor: pointer;
+  }
+
+
+
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+  padding-left: 8%;
+  margin-top: 40px;
+}
+
+/* Each Column */
+.footer > div {
+  flex: 1;
+  /* min-width: 180px; */
+  text-align: left;
+}
+
+/* Column Headings */
+.footer .about,
+.footer .support,
+.footer .quicklinks,
+.footer .getintouch,
+.footer .address,
+.footer .weaccept {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+/* List Items */
+.footer li {
+  list-style: none;
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: left;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.footer li:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Phone and Email Rows */
+.phonefotter,
+.emailfooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.phonefotter img,
+.emailfooter img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.phonefotter li,
+.emailfooter li {
+  font-size: 15px;
+  color: #ccc;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emailfooter a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.emailfooter a:hover {
+  text-decoration: underline;
+}
+
+/* Social media logo */
+.footer img[alt="Social media logo"] {
+  margin-top: 10px;
+  width: 160px;
+  height: auto;
+}
+
+/* Address */
+.addresspara,
+.watsappnumber {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Card icon under 'We Accept' */
+.card-icon {
+  width: 80px;
+  margin-top: 10px;
+  display: block;
+}
+
+.hr{
+  border: none;
+  border-top: 1px solid #222;
+  margin: 0 70px;
+}
+
+.pageendpara1{
+    color: white;
+    font-size: 14px;
+    background-color: #000;
+    padding: 30px;
+    text-align: center;
+}
+
+ 
 
 
 
