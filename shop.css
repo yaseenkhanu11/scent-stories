@@ -12,7 +12,7 @@ body {
 }
 
 .whitebackground {
-    /* You can style this if needed */
+    /* style this if needed */
 }
 
 /* Top bar */
@@ -84,11 +84,19 @@ hr {
     gap: 8px;
 }
 
-/* Icon sizes */
 .acountpic,
 .cartlogo {
-    width: 40px;
+    width:38px;
+    padding: 2px ;
 }
+
+.icon-group a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+
 
 /* Account/Cart text */
 .account, .cart {
@@ -122,6 +130,10 @@ hr {
     color: white;
 }
 
+.nav1 a{
+  text-decoration: none;
+}
+
 .bannerpic {
     width: 100%;
     height: auto;
@@ -131,7 +143,7 @@ hr {
 
 .product{
     margin-top: 30px ;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-left: 30px;
     
 }
@@ -448,7 +460,7 @@ hr {
 
 .areapic34 img{
   border-radius: 10px 10px 0px 0px;
-   transition: opacity 0.4s ease;
+     transition: transform 0.3s ease;
 }
 .checked{
   color: #f8a300;
@@ -511,7 +523,7 @@ hr {
 
 .areapic35 img{
   border-radius: 10px 10px 0px 0px;
-   transition: opacity 0.4s ease;
+   transition: transform 0.3s ease;
 }
 .checked{
   color: #f8a300;
@@ -579,8 +591,9 @@ hr {
 
 .areapic36 img{
   border-radius: 10px 10px 0px 0px;
-   transition: opacity 0.4s ease;
-}
+   /* transition: transform 0.3s ease; */
+    transition: transform 0.8s ease;
+  }
 .checked{
   color: #f8a300;
  
@@ -934,6 +947,7 @@ hr {
     padding: 30px;
     text-align: center;
 }
+
 
  
 

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.whitebackground {
+   
+}
+
+/* Top bar */
+.freeship {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: #444;
+}
+
+/* Top header section */
+.black {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 10px 40px;
+}
+
+
+/* Flex container for header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #0e0e0e;
+    color: white;
+   
+}
+
+/* Search box */
+.search-box input {
+    width: 270px;
+    padding: 12px 12px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 2px;
+   
+}
+
+/* Logo */
+.logo-box .scentpic {
+    width: 200px;
+}
+
+/* Account & Cart container */
+.account-cart-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Each icon + label group */
+.icon-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+}
+
+/* Icon sizes */
+.acountpic,
+.cartlogo {
+    width:38px;
+}
+
+.icon-group a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* Account/Cart text */
+.account, .cart{
+    font-size: 13px;
+    margin: 0;
+}
+
+
+
+/* Navigation bar */
+.nav1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 8px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+   
+}
+
+.nav1 li {
+    position: relative;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+    color: white;
+    
+}
+
+
+.nav1 li:hover {
+    text-underline-offset: 23px;
+    text-decoration: underline;
+    color: white;
+}
+
+.nav1 li {
+    position: relative;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.nav1 a{
+  text-decoration: none;
+}

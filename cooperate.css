@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+     max-width: 100%;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.whitebackground {
+    /* style this if needed */
+}
+
+/* Top bar */
+.freeship {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: #444;
+}
+
+/* Top black section (Free shipping + nav) */
+.black {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 10px 40px;
+}
+
+/* Sticky header section (search, logo, account/cart) */
+.black2 {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0e0e0e;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Flex container for header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #0e0e0e;
+    color: white;
+}
+
+/* Search box */
+.search-box input {
+    width: 270px;
+    padding: 12px 12px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 2px;
+}
+
+/* Logo */
+.logo-box .scentpic {
+    width: 200px;
+}
+
+/* Account & Cart container */
+.account-cart-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Each icon + label group */
+.icon-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-group a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Icon sizes */
+.acountpic,
+.cartlogo {
+    width: 40px;
+}
+
+/* Account/Cart text */
+.account, .cart {
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Navigation bar */
+.nav1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 8px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav1 li {
+    position: relative;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.nav1 li:hover {
+    text-underline-offset: 23px;
+    text-decoration: underline;
+    color: white;
+}
+
+.nav1 a{
+  text-decoration: none;
+}
+
+.bulk{
+    margin-top: 30px;
+    margin-left: 24%;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+/* Centering all sections */
+.bulkform-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+/* Bulk info section (top block) */
+.bulkform-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 600px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.bulk-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #333;
+  font-style: italic;
+}
+
+.bulkpara1,
+.bulkpara2,
+.bulkpara3 {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.putemail {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* Uniform card style for each form block */
+.form-section,
+.checkbox-group,
+.radio-group {
+  width: 600px;
+  border: 1px solid #ccc;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Labels */
+.field-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.required {
+  color: red;
+  font-weight: normal;
+}
+
+/* Underlined Inputs */
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.input-field:focus {
+  border-bottom: 2px solid;
+}
+
+/* Checkbox & Radio Labels */
+.checkbox-label,
+.radio-label {
+  display: block;
+  font-size: 14px;
+ 
+  color: #333;
+}
+
+/* input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+  vertical-align: middle;
+} */
+
+/* Optional: Placeholder styling */
+::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.radio1{
+    margin-top: 10px;
+
+}
+
+/* Submit and Clear container */
+.submitclear {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Submit Button */
+.formsubmitbutton {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+/* Clear form paragraph */
+.formpara {
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+
+  
+}
+
+/* Bottom notice */
+.paramove {
+  width: 600px;
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+  margin-bottom: 50%;
+}
+
+.wholethreesquare {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.squarecard1,
+.squarecard2,
+.squarecard3 {
+  width: 380px;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.squarecard2{
+    background-color: #888;
+}
+.squarecard1,
+.squarecard3{
+    background-color: #f8f8f8;
+}
+.card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50% 50% 0 0;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.card-title {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-style: normal;
+
+}
+
+.card-title2 {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+/* Paragraph */
+.card-desc1,
+.card-desc3{
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.card-desc2{
+    color: white;
+    font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 15px;
+}
+
+/* Button */
+.card-btn1,
+.card-btn3 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn2 {
+  background-color: white;
+  color: grey;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn1:hover,
+ .card-btn3:hover{
+  background-color: white;
+  color: #000;
+}
+
+
+.card-btn2:hover{
+  color: #000;
+}
+
+.emailoffers{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.emailofferpara{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 15%;
+    
+}
+
+.email1{
+    padding: 13px;
+    margin-left: 20px;
+    width: 17%;
+    font-style: normal;
+  }
+
+ 
+
+  ::placeholder{
+    font-size: 15px;
+    color: #000;
+  }
+
+  .subscribe{
+     width: 13%;
+     text-align: center;
+     padding: 12px;
+     border-bottom-right-radius: 25px;
+     border-top-right-radius: 25px;
+     font-size: 18px;
+     background-color: #c00;
+     color: white;
+     font-weight: bold;
+     border: none;
+     cursor: pointer;
+  }
+
+
+
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+  padding-left: 8%;
+  margin-top: 40px;
+}
+
+/* Each Column */
+.footer > div {
+  flex: 1;
+  /* min-width: 180px; */
+  text-align: left;
+}
+
+/* Column Headings */
+.footer .about,
+.footer .support,
+.footer .quicklinks,
+.footer .getintouch,
+.footer .address,
+.footer .weaccept {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+/* List Items */
+.footer li {
+  list-style: none;
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: left;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.footer li:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Phone and Email Rows */
+.phonefotter,
+.emailfooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.phonefotter img,
+.emailfooter img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.phonefotter li,
+.emailfooter li {
+  font-size: 15px;
+  color: #ccc;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emailfooter a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.emailfooter a:hover {
+  text-decoration: underline;
+}
+
+/* Social media logo */
+.footer img[alt="Social media logo"] {
+  margin-top: 10px;
+  width: 160px;
+  height: auto;
+}
+
+/* Address */
+.addresspara,
+.watsappnumber {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Card icon under 'We Accept' */
+.card-icon {
+  width: 80px;
+  margin-top: 10px;
+  display: block;
+}
+
+.hr{
+  border: none;
+  border-top: 1px solid #222;
+  margin: 0 70px;
+}
+
+.pageendpara1{
+    color: white;
+    font-size: 14px;
+    background-color: #000;
+    padding: 30px;
+    text-align: center;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+

@@ -76,17 +76,26 @@ hr {
     display: flex;
     align-items: center;
     gap: 8px;
+  
 }
 
 /* Icon sizes */
 .acountpic,
 .cartlogo {
-    width:40px;
+    width:38px;
 }
+
+.icon-group a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+
 
 /* Account/Cart text */
 .account, .cart{
-    font-size: 15px;
+    font-size: 13px;
     margin: 0;
 }
 
@@ -125,6 +134,10 @@ hr {
     position: relative;
     padding: 8px 12px;
     transition: color 0.3s ease;
+}
+
+.nav1 a{
+  text-decoration: none;
 }
 
 .bannerpic {
